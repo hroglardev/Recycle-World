@@ -1,0 +1,3 @@
+const getScreenWidth = () => {
+  window.innerWidth;
+};

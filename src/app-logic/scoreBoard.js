@@ -1,11 +1,11 @@
-class ScoreBoard {
+export class ScoreBoard {
   constructor() {
     this.score = 0;
     this.mistakes = 0;
   }
 
   checkMistakes() {
-    return this.mistakes >= 0;
+    return this.mistakes >= 3;
   }
 
   checkScore() {
@@ -19,6 +19,14 @@ class ScoreBoard {
 
   incrementMistakes() {
     this.mistakes += 1;
+    return this.mistakes;
+  }
+
+  getScore() {
+    return this.score;
+  }
+
+  getMistakes() {
     return this.mistakes;
   }
 
