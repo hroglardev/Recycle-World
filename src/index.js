@@ -53,28 +53,28 @@ export const DATA = {
   navBins: [
     {
       id: 0,
-      src: RedBin,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
       alt: 'Tacho rojo',
       width: '40px',
       color: 'Red'
     },
     {
       id: 1,
-      src: GrayBin,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967272/gray-bin_irnmko.svg',
       alt: 'Tacho gris',
       width: '40px',
       color: 'Gray'
     },
     {
       id: 2,
-      src: BlueBin,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967271/blue-bin_s8xhdc.svg',
       alt: 'Tacho azul',
       width: '40px',
       color: 'Blue'
     },
     {
       id: 3,
-      src: GreenBin,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967272/green-bin_gfkdtt.svg',
       alt: 'Tacho verde',
       width: '40px',
       color: 'Green'
@@ -85,112 +85,112 @@ export const DATA = {
       id: 0,
       name: 'Banana',
       targetBin: 'Green',
-      src: Banana,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967271/banana_dm3svm.png',
       alt: 'banana'
     },
     {
       id: 1,
       name: 'Cesped',
       targetBin: 'Green',
-      src: Grass,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967272/grass_cgob8u.png',
       alt: 'cesped'
     },
     {
       id: 2,
       name: 'Apple',
       targetBin: 'Green',
-      src: RottenApple,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967274/rotten-apple_oqckiy.png',
       alt: 'manzana-comida'
     },
     {
       id: 3,
       name: 'Saquito de te',
       targetBin: 'Green',
-      src: Teabag,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967274/teabag_ytalje.png',
       alt: 'Saquito de te'
     },
     {
       id: 4,
       name: 'Serrucho',
       targetBin: 'Blue',
-      src: Saw,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967274/saw_fkbxsf.png',
       alt: 'Serrucho'
     },
     {
       id: 5,
       name: 'Taza de plastico',
       targetBin: 'Blue',
-      src: Teacup,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967275/teacup_mupdsc.png',
       alt: 'Vaso de plastico'
     },
     {
       id: 6,
       name: 'Tornillo',
       targetBin: 'Blue',
-      src: Bolt,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967272/bolt_qzgn3k.png',
       alt: 'Tornillo'
     },
     {
       id: 7,
       name: 'Botella de plastico',
       targetBin: 'Blue',
-      src: WaterBottle,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967275/water-bottle_c3eu89.png',
       alt: 'Botella de plastico'
     },
     {
       id: 8,
       name: 'Termometro',
       targetBin: 'Red',
-      src: Thermometer,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967275/thermometer_pleexr.png',
       alt: 'Termometro'
     },
     {
       id: 9,
       name: 'Bateria',
       targetBin: 'Red',
-      src: Battery,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967271/battery_ri5jse.png',
       alt: 'Pila alcalina'
     },
     {
       id: 10,
       name: 'Desechos toxicos',
       targetBin: 'Red',
-      src: Nuclear,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967274/nuclear_htmxnw.png',
       alt: 'Desechos tóxicos'
     },
     {
       id: 11,
       name: 'Jeringa',
       targetBin: 'Red',
-      src: Vaccine,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967275/vaccine_tiltgi.png',
       alt: 'Jeringa'
     },
     {
       id: 12,
       name: 'Papel-higienico',
       targetBin: 'Gray',
-      src: ToiletRoll,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967275/toilet-roll_zzb8kd.png',
       alt: 'Papel higienico'
     },
     {
       id: 13,
       name: 'Caja de carton',
       targetBin: 'Gray',
-      src: OpenBox,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967271/open-box_odsgiq.png',
       alt: 'Caja de carton'
     },
     {
       id: 14,
       name: 'Periodico',
       targetBin: 'Gray',
-      src: Newspaper,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967274/newspaper_axixye.png',
       alt: 'Periodico'
     },
     {
       id: 15,
       name: 'Revista',
       targetBin: 'Gray',
-      src: Magazine,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967274/magazine_shszak.png',
       alt: 'Revista'
     }
   ]
