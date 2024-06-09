@@ -1,50 +1,29 @@
-import Banana from '../src/assets/banana.png';
-import Battery from '../src/assets/battery.png';
-import BlueBin from '../src/assets/blue-bin.svg';
-import Bolt from '../src/assets/bolt.png';
-import Grass from '../src/assets/grass.png';
-import GrayBin from '../src/assets/gray-bin.svg';
-import GreenBin from '../src/assets/green-bin.svg';
-import Magazine from '../src/assets/magazine.png';
-import Newspaper from '../src/assets/newspaper.png';
-import Nuclear from '../src/assets/nuclear.png';
-import OpenBox from '../src/assets/open-box.png';
-import RottenApple from '../src/assets/rotten-apple.png';
-import Saw from '../src/assets/saw.png';
-import Teabag from '../src/assets/teabag.png';
-import Teacup from '../src/assets/teacup.png';
-import Thermometer from '../src/assets/thermometer.png';
-import ToiletRoll from '../src/assets/toilet-roll.png';
-import Vaccine from '../src/assets/vaccine.png';
-import WaterBottle from '../src/assets/water-bottle.png';
-import RedBin from '../src/assets/red-bin.svg';
-
 export const DATA = {
   games: [
     {
       id: 0,
-      src: RedBin,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
       alt: 'Tacho rojo',
       name: 'juego 1',
       description: 'un jueguito'
     },
     {
       id: 0,
-      src: RedBin,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
       alt: 'Tacho rojo',
       name: 'juego 2',
       description: 'un jueguito'
     },
     {
       id: 0,
-      src: RedBin,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
       alt: 'Tacho rojo',
       name: 'juego 3',
       description: 'un jueguito'
     },
     {
       id: 0,
-      src: RedBin,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
       alt: 'Tacho rojo',
       name: 'juego 4',
       description: 'un jueguito'
