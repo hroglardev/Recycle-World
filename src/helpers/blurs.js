@@ -13,7 +13,7 @@ export const removeBlur = () => {
   const header = document.querySelector('header');
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');
-  const bins = Array.from(document.querySelectorAll('.bin > img'));
+  const bins = Array.from(document.querySelectorAll('.bin'));
 
   header.classList.remove('filtered');
   main.classList.remove('filtered');
