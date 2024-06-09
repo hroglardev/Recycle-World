@@ -1,6 +1,6 @@
 import { blurBackground, removeBlur } from './blurs';
-import Finger from '../assets/images/pointing-finger.svg';
-import Left from '../assets/images/pointing-left.svg';
+import Finger from '../assets/pointing-finger.svg';
+import Left from '../assets/pointing-left.svg';
 
 export const modalInstruction = () => {
   const container = document.createElement('div');

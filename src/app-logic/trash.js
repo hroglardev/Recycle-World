@@ -1,5 +1,5 @@
 import { TrashItem } from './trashItem';
-import { trash } from '../../data.json';
+import { DATA } from '../../src/index';
 
 export class Trash {
   constructor() {
@@ -16,10 +16,10 @@ export class Trash {
       usedTrash.push(index);
       this.list.push(
         new TrashItem(
-          trash[index].name,
-          trash[index].targetBin,
-          trash[index].src,
-          trash[index].alt
+          DATA.trash[index].name,
+          DATA.trash[index].targetBin,
+          DATA.trash[index].src,
+          DATA.trash[index].alt
         )
       );
     }

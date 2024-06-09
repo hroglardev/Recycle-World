@@ -1,5 +1,5 @@
 import { dropCard } from '../app-logic/dropCard';
-import { navBins } from '../../data.json';
+import { DATA } from '../../src/index';
 import { gameBin } from './gamebin';
 import { scoreBoard } from '../../main';
 import { trash } from '../../main';
@@ -8,10 +8,17 @@ import { winModal } from './winModal';
 export const bins = () => {
   const interactionBins = document.querySelector('.interaction-bins');
 
-  for (let i = 0; i < navBins.length; i++) {
-    const bin = gameBin(navBins[i].src, navBins[i].alt, navBins[i].color);
+  for (let i = 0; i < DATA.navBins.length; i++) {
+    const bin = gameBin(
+      DATA.navBins[i].src,
+      DATA.navBins[i].alt,
+      DATA.navBins[i].color
+    );
     bin.addEventListener('click', () => {
-      const { result, nameTarget } = dropCard(navBins[i].color, scoreBoard);
+      const { result, nameTarget } = dropCard(
+        DATA.navBins[i].color,
+        scoreBoard
+      );
       const gameLost = scoreBoard.checkMistakes();
       gameLost && loseModal();
       const gameWon = scoreBoard.checkScore();

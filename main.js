@@ -7,12 +7,7 @@ import { ScoreBoard } from './src/app-logic/scoreBoard';
 import { bins } from './src/components/bins';
 import { carousel } from './src/components/carousel';
 import { cards } from './src/components/cards';
-import {
-  showCards,
-  showScore,
-  showBins,
-  modalInstruction
-} from './src/helpers/instructions';
+import { modalInstruction } from './src/helpers/instructions';
 import { blurBackground } from './src/helpers/blurs';
 
 export const trash = new Trash();

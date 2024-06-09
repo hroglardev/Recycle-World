@@ -1,5 +1,5 @@
 import { resetGame } from '../app-logic/resetGame';
-import { games } from '../../data.json';
+import { DATA } from '../../src/index';
 import { alternativeGameCard } from './alternativeGameCard';
 
 export const winModal = () => {
@@ -11,7 +11,7 @@ export const winModal = () => {
   restartButton.innerText = 'Jugar otra vez';
   const bins = Array.from(document.querySelectorAll('.bin'));
   bins.forEach((bin) => (bin.style.pointerEvents = 'none'));
-  games.forEach((game) => {
+  DATA.games.forEach((game) => {
     gamesContainer.appendChild(
       alternativeGameCard(game.name, game.description, game.src, game.alt)
     );
