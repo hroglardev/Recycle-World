@@ -10,9 +10,11 @@ export const dropCard = (targetBin, scoreBoard) => {
     selectedItem.remove();
     document.getElementById(nameTarget).remove();
     const nextItem = document.querySelector('.carousel-item');
-    if (nextItem !== null && window.innerWidth <= 768) {
+    if (nextItem !== null) {
       nextItem.classList.add('active');
-      nextItem.classList.add('selected');
+      if (window.innerWidth < 768) {
+        nextItem.classList.add('selected');
+      }
     }
     return { result: true, nameTarget };
   }

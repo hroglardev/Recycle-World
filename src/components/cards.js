@@ -14,6 +14,10 @@ export const cards = () => {
       trashItem.name
     );
     cardItem.addEventListener('click', () => {
+      const previousSelection = document.querySelector('.selected');
+      if (previousSelection !== null) {
+        previousSelection.classList.remove('selected');
+      }
       cardItem.classList.add('selected');
     });
     cardItem.classList.remove('carousel-item');

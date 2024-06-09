@@ -11,11 +11,18 @@
 #app {
   display: grid;
   grid-template-rows: auto 1fr auto auto;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("../assets/images/park.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  header {
+    color: white;
+  }
   main {
     grid-row: 2 / 3;
     display: grid;
     align-items: center;
+    position: relative;
   }
 
   aside {
@@ -59,6 +66,7 @@
 }
 .carousel-item {
   transition: transform .6s ease-in-out; 
+  
 }
 .carousel-inner {
   max-width: 250px;
@@ -67,6 +75,8 @@
   align-items: center;
   padding: 20px;
   border-radius: 16px;
+  background-color: white;
+  border: 2px solid green;
 }
 
 
@@ -74,7 +84,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
-  border: 1px solid red;
 }
 
 
@@ -89,6 +98,20 @@
   }
 }
 
+@keyframes point {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}
+
+
+
 .modal {
   position: absolute;
   top: 30%;
@@ -101,10 +124,12 @@
   left: 50%;
   opacity: 0;
   animation: modal 0.8s ease-in-out forwards;
-  border: 3px solid red;
+  border: 3px solid green;
+  border-radius: 8px;
+  background-color: white;
 
   button {
-    max-width: fit-content;
+    width: fit-content;
   }
 }
 
@@ -127,13 +152,108 @@
     display: grid;
     place-content: center;
     padding-inline: 15px;
+    padding-block: 15px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 200ms ease-in-out;
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
     &:hover {
       transform: translateY(-10px);
     }
+
+    &.selected {
+      border: 4px solid green
+    }
   }
 }
+
+
+.filtered {
+  filter: brightness(20%);
+}
+
+.finger-score {
+  position: absolute;
+  right: 120%;
+  animation: point 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) translateX(-50%) rotate(90deg);
+  }
+  40% {
+    transform: translateY(-30px) translateX(-50%) rotate(90deg);
+  }
+  60% {
+    transform: translateY(-15px) translateX(-50%) rotate(90deg);
+  }
+}
+
+.finger-cards {
+  position: absolute;
+  left: 50%;
+  top: -7vh;
+  animation: bounce 1s infinite;
+  @media(max-width:768px) {
+    top: -1%;
+  }
+}
+
+@keyframes pointLeft {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(30px);
+  }
+  60% {
+    transform: translateX(15px);
+  }
+}
+
+.finger-bins.full {
+  position: absolute;
+  left: 130px;
+  top: 200px;
+  animation: pointLeft 1s infinite;
+}
+
+.finger-bins.mobile {
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  animation: bounce 1s infinite;
+ 
+}
+
+.modal-instruction-start {
+  position: absolute;
+  top: 30%;
+  width: min(500px, 90vw);
+  height: fit-content;
+  align-items: center;
+  padding-block: 30px;
+  padding-inline: 30px;
+  font-size: 1.2rem;
+  left: 50%;
+  opacity: 0;
+  animation: modal 0.8s ease-in-out forwards;
+  transition: all 0.8s ease-in-out;
+  border: 3px solid green;
+  border-radius: 8px;
+  background-color: white;
+
+  button {
+    width: fit-content;
+    align-self: center;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+
 

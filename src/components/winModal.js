@@ -19,7 +19,7 @@ export const winModal = () => {
 
   container.className = 'd-flex flex-column align-items center gap-2 modal';
   gamesContainer.className = 'alternative-games';
-  restartButton.className = 'btn btn-success w-25 align-self-center';
+  restartButton.className = 'btn btn-success align-self-center';
   restartButton.addEventListener('click', () => {
     resetGame(container);
     bins.forEach((bin) => (bin.style.pointerEvents = 'all'));

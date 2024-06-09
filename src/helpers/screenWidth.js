@@ -1,3 +1,0 @@
-const getScreenWidth = () => {
-  window.innerWidth;
-};
