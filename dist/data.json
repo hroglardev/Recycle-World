@@ -1,0 +1,179 @@
+
+
+{
+  "games": [
+    {
+      "id": 0,
+      "src": "./src/assets/images/red-bin.svg",
+      "alt": "Tacho rojo",
+      "name": "juego 1",
+      "description": "un jueguito"
+    },
+    {
+      "id": 0,
+      "src": "./src/assets/images/red-bin.svg",
+      "alt": "Tacho rojo",
+      "name": "juego 2",
+      "description": "un jueguito"
+    },
+    {
+      "id": 0,
+      "src": "./src/assets/images/red-bin.svg",
+      "alt": "Tacho rojo",
+      "name": "juego 3",
+      "description": "un jueguito"
+    },
+    {
+      "id": 0,
+      "src": "./src/assets/images/red-bin.svg",
+      "alt": "Tacho rojo",
+      "name": "juego 4",
+      "description": "un jueguito"
+    }
+    
+  ],
+  "navBins": [
+    {
+      "id": 0,
+      "src": "./src/assets/images/red-bin.svg",
+      "alt": "Tacho rojo",
+      "width": "40px",
+      "color": "Red"
+    },
+    {
+      "id": 1,
+      "src": "./src/assets/images/gray-bin.svg",
+      "alt": "Tacho gris",
+      "width": "40px",
+      "color": "Gray"
+    },
+    {
+      "id": 2,
+      "src": "./src/assets/images/blue-bin.svg",
+      "alt": "Tacho azul",
+      "width": "40px",
+      "color": "Blue"
+    },
+    {
+      "id": 3,
+      "src": "./src/assets/images/green-bin.svg",
+      "alt": "Tacho verde",
+      "width": "40px",
+      "color": "Green"
+    }
+  ],
+  "trash": [
+    {
+    "id": 0,
+    "name": "Banana",
+    "targetBin": "Green",
+    "src": "./src/assets/images/banana.png",
+    "alt": "banana"
+  },
+  {
+    "id": 1,
+    "name": "Cesped",
+    "targetBin": "Green",
+    "src": "./src/assets/images/grass.png",
+    "alt": "cesped"
+  },
+  {
+    "id": 2,
+    "name": "Apple",
+    "targetBin": "Green",
+    "src": "./src/assets/images/rotten-apple.png",
+    "alt": "manzana-comida"
+  },
+  {
+    "id": 3,
+    "name": "Saquito de te",
+    "targetBin": "Green",
+    "src": "./src/assets/images/teabag.png",
+    "alt": "Saquito de te"
+  },
+  {
+    "id": 4,
+    "name": "Serrucho",
+    "targetBin": "Blue",
+    "src": "./src/assets/images/saw.png",
+    "alt": "Serrucho"
+  },
+  {
+    "id": 5,
+    "name": "Taza de plastico",
+    "targetBin": "Blue",
+    "src": "./src/assets/images/teacup.png",
+    "alt": "Vaso de plastico"
+  },
+  {
+    "id": 6,
+    "name": "Tornillo",
+    "targetBin": "Blue",
+    "src": "./src/assets/images/bolt.png",
+    "alt": "Tornillo"
+  },
+  {
+    "id": 7,
+    "name": "Botella de plastico",
+    "targetBin": "Blue",
+    "src": "./src/assets/images/water-bottle.png",
+    "alt": "Botella de plastico"
+  },
+  {
+    "id": 8,
+    "name": "Termometro",
+    "targetBin": "Red",
+    "src": "./src/assets/images/thermometer.png",
+    "alt": "Termometro"
+  },
+  {
+    "id": 9,
+    "name": "Bateria",
+    "targetBin": "Red",
+    "src": "./src/assets/images/battery.png",
+    "alt": "Pila alcalina"
+  },
+  {
+    "id": 10,
+    "name": "Desechos toxicos",
+    "targetBin": "Red",
+    "src": "./src/assets/images/nuclear.png",
+    "alt": "Desechos tóxicos"
+  },
+  {
+    "id": 11,
+    "name": "Jeringa",
+    "targetBin": "Red",
+    "src": "./src/assets/images/vaccine.png",
+    "alt": "Jeringa"
+  },
+  {
+    "id": 12,
+    "name": "Papel-higienico",
+    "targetBin": "Gray",
+    "src": "./src/assets/images/toilet-roll.png",
+    "alt": "Papel higienico"
+  },
+  {
+    "id": 13,
+    "name": "Caja de carton",
+    "targetBin": "Gray",
+    "src": "./src/assets/images/open-box.png",
+    "alt": "Caja de carton"
+  },
+  {
+    "id": 14,
+    "name": "Periodico",
+    "targetBin": "Gray",
+    "src": "./src/assets/images/newspaper.png",
+    "alt": "Periodico"
+  },
+  {
+    "id": 15,
+    "name": "Revista",
+    "targetBin": "Gray",
+    "src": "./src/assets/images/magazine.png",
+    "alt": "Revista"
+  }]
+  
+}
