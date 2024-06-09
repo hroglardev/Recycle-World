@@ -15,6 +15,20 @@ export const scoreBoard = new ScoreBoard();
 trash.buildTrash();
 
 const app = () => {
+  document
+    .querySelector('.carousel-control-next')
+    .addEventListener('click', () => {
+      document.querySelector('.active').classList.remove('selected');
+      document.querySelector('.carousel-item-next').classList.add('selected');
+    });
+
+  document
+    .querySelector('.carousel-control-prev')
+    .addEventListener('click', () => {
+      document.querySelector('.active').classList.remove('selected');
+      document.querySelector('.carousel-item-prev').classList.add('selected');
+    });
+
   window.addEventListener('resize', () => {
     const screenWidth = window.innerWidth;
     const carouselSelected = document.querySelector('.active');
