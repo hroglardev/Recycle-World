@@ -9,7 +9,7 @@ export const loseModal = () => {
 
   const bins = Array.from(document.querySelectorAll('.bin'));
   bins.forEach((bin) => (bin.style.pointerEvents = 'none'));
-  container.className = 'd-flex flex-column align-items center gap-2 modal';
+  container.className = 'd-flex flex-column align-items-center gap-2 modal';
   restartButton.className = 'btn btn-danger w-50 align-self-center';
   restartButton.addEventListener('click', () => {
     resetGame(container);

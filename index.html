@@ -4,13 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <script type="module" src="/main.js" defer></script>
     <title>Vite App</title>
   </head>
   <body>
     <div id="app" class="min-vh-100">
-      <header class="d-flex justify-content-between px-2">
+      <header class="d-flex justify-content-between px-5">
         <div class="d-flex align-items-center gap-2">
           <img src="./src/assets/images/recycle-svgrepo-com.svg" alt="" />
           <h1 class="d-none d-sm-block">Recycle world</h1>
@@ -27,9 +26,10 @@
         </div>
       </header>
       <main class="">
+        <div id="cards-container" class=".d-none .d-md-block"></div>
         <div
           id="carousel"
-          class="carousel slide carousel-dark slide d-flex justify-content-evenly align-items-center">
+          class="carousel slide carousel-dark slide d-flex justify-content-evenly align-items-center d-md-none">
           <div class="carousel-inner shadow-lg"></div>
           <button
             class="carousel-control-prev"

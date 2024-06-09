@@ -1,5 +1,6 @@
 import { trash, scoreBoard } from '../../main';
 import { carousel } from '../components/carousel';
+import { cards } from '../components/cards';
 
 export const resetGame = (modal) => {
   const scores = Array.from(document.querySelectorAll('.counter'));
@@ -9,4 +10,5 @@ export const resetGame = (modal) => {
   trash.cleanTrash();
   trash.buildTrash();
   carousel();
+  cards();
 };

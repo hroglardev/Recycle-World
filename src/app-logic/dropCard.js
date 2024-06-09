@@ -1,13 +1,16 @@
 export const dropCard = (targetBin, scoreBoard) => {
   let selectedItem = document.querySelector('.selected');
+  if (selectedItem === null) return false;
   if (selectedItem.getAttribute('class').split(' ')[0] === targetBin) {
     const score = document.querySelector('#first-counter');
     scoreBoard.incrementScore();
     score.innerText = scoreBoard.getScore();
     const nameTarget = selectedItem.id;
+
     selectedItem.remove();
+    document.getElementById(nameTarget).remove();
     const nextItem = document.querySelector('.carousel-item');
-    if (nextItem !== null) {
+    if (nextItem !== null && window.innerWidth <= 768) {
       nextItem.classList.add('active');
       nextItem.classList.add('selected');
     }

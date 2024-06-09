@@ -9,7 +9,8 @@ export const winModal = () => {
   const restartButton = document.createElement('button');
   textParagraph.innerText = 'Felicitaciones, eres un gran reciclador';
   restartButton.innerText = 'Jugar otra vez';
-
+  const bins = Array.from(document.querySelectorAll('.bin'));
+  bins.forEach((bin) => (bin.style.pointerEvents = 'none'));
   games.forEach((game) => {
     gamesContainer.appendChild(
       alternativeGameCard(game.name, game.description, game.src, game.alt)
@@ -18,8 +19,11 @@ export const winModal = () => {
 
   container.className = 'd-flex flex-column align-items center gap-2 modal';
   gamesContainer.className = 'alternative-games';
-  restartButton.className = 'btn btn-success w-50 align-self-center';
-  restartButton.addEventListener('click', () => resetGame(container));
+  restartButton.className = 'btn btn-success w-25 align-self-center';
+  restartButton.addEventListener('click', () => {
+    resetGame(container);
+    bins.forEach((bin) => (bin.style.pointerEvents = 'all'));
+  });
   container.appendChild(textParagraph);
   container.appendChild(gamesContainer);
   container.appendChild(restartButton);
