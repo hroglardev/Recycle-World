@@ -9,7 +9,7 @@ export class ScoreBoard {
   }
 
   checkScore() {
-    return this.score >= 10;
+    return this.score >= 1;
   }
 
   incrementScore() {

@@ -7,11 +7,10 @@ export const alternativeGameCard = (name, description, src, alt) => {
   const linkToGame = document.createElement('a');
 
   card.className = 'card';
-  gameImage.className = 'card-img-top';
-  info.className = 'card-body';
-  gameName.className = 'card-title';
-  gameDesc.className = 'card-text';
-  linkToGame.className = 'btn btn-success';
+  info.className = 'card-body d-flex flex-column';
+  gameName.className = 'card-title fs-4 text';
+  gameDesc.className = 'card-text fs-5 text';
+  linkToGame.className = 'btn btn-success align-self-center';
 
   gameImage.src = src;
   gameImage.alt = alt;

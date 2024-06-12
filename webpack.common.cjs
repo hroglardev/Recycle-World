@@ -15,7 +15,7 @@ module.exports = {
       scriptLoading: 'defer',
       inject: 'head',
       template: './index.html',
-      favicon: './public/vite.svg'
+      favicon: './public/favicon.svg'
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
