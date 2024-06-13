@@ -17,8 +17,23 @@
   background-attachment: fixed;
   min-height: 100dvh;
   header {
-    color: white;
+    color: black;
     padding-right: 10px;
+    position: absolute;
+    top: 0.75vh;
+    right: 0;
+
+  }
+  .container-fluid {
+    justify-content: initial;
+    gap: 5px;
+  }
+
+  h1 {
+    margin: 0;
+    @media(max-width: 380px) {
+      display: none;
+    }
   }
   main {
     grid-row: 2 / 3;
@@ -35,7 +50,7 @@
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr auto;
     
-    header, footer {
+    nav, footer {
       grid-column: 1 / 3;
     }
 

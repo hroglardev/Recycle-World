@@ -3,6 +3,7 @@ export const blurBackground = () => {
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');
   const bins = Array.from(document.querySelectorAll('.bin'));
+  document.querySelector('nav').classList.add('filtered');
   header.classList.add('filtered');
   main.classList.add('filtered');
   footer.classList.add('filtered');
@@ -14,7 +15,7 @@ export const removeBlur = () => {
   const main = document.querySelector('main');
   const footer = document.querySelector('footer');
   const bins = Array.from(document.querySelectorAll('.bin'));
-
+  document.querySelector('nav').classList.remove('filtered');
   header.classList.remove('filtered');
   main.classList.remove('filtered');
   footer.classList.remove('filtered');

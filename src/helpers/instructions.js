@@ -32,6 +32,7 @@ export const showScore = () => {
   document.querySelector('.logo').classList.add('filtered');
 
   const scores = document.querySelector('.scores');
+  scores.style.color = 'white';
   scores.classList.remove('filtered');
   const finger = document.createElement('img');
   finger.src = Finger;
@@ -48,6 +49,7 @@ export const showScore = () => {
     document.querySelector('.instruction-text').innerText =
       'Selecciona la tarjeta con el elemento que quieres colocar en un cesto.';
     showCards();
+    scores.style.color = 'black';
   });
 };
 

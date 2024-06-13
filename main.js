@@ -1,6 +1,5 @@
 import './src/styles/style.scss';
 
-import * as bootstrap from 'bootstrap';
 import { Trash } from './src/app-logic/trash';
 import { ScoreBoard } from './src/app-logic/scoreBoard';
 
@@ -27,6 +26,7 @@ const app = () => {
     .addEventListener('click', () => {
       document.querySelector('.active').classList.remove('selected');
       document.querySelector('.carousel-item-prev').classList.add('selected');
+      console.log('que?');
     });
 
   window.addEventListener('resize', () => {
@@ -51,4 +51,3 @@ const app = () => {
 };
 
 app();
-

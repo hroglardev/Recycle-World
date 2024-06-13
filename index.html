@@ -30,23 +30,56 @@
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous" />
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
       defer></script>
-    <script type="module" src="/main.js" defer></script>
+
     <title>Recycle world</title>
   </head>
   <body>
     <div id="app">
-      <header class="d-flex justify-content-between">
-        <div class="d-flex align-items-center logo gap-2">
-          <img
-            src="https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967272/recycle-svgrepo-com_wm3ucf.svg"
-            alt="logo recycling" />
-          <h1 class="d-none d-sm-block">Recycle world</h1>
+      <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h1 class="navbar-brand">Recycle World</h1>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="integrantes.html">Integrantes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="avances.html"
+                  >Avances</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="true" href="juegos.html"
+                  >Juegos</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <header class="d-flex justify-content-between">
+        <div class="d-flex align-items-center logo gap-2"></div>
         <div class="d-flex align-items-center scores gap-3">
           <div class="d-flex align-items-center gap-2">
             <p id="first-counter" class="counter fs-2 m-0">0</p>
