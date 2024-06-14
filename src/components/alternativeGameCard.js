@@ -1,4 +1,4 @@
-export const alternativeGameCard = (name, description, src, alt) => {
+export const alternativeGameCard = (name, description, src, alt, link) => {
   const card = document.createElement('article');
   const gameImage = document.createElement('img');
   const info = document.createElement('div');
@@ -11,7 +11,7 @@ export const alternativeGameCard = (name, description, src, alt) => {
   gameName.className = 'card-title fs-4 text';
   gameDesc.className = 'card-text fs-5 text';
   linkToGame.className = 'btn btn-success align-self-center';
-
+  linkToGame.setAttribute('href', link);
   gameImage.src = src;
   gameImage.alt = alt;
 

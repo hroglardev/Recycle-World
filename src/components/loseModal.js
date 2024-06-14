@@ -16,6 +16,7 @@ export const loseModal = () => {
 
   carouselButtons.forEach((button) => (button.style.pointerEvents = 'none'));
   container.className = 'd-flex flex-column align-items-center gap-2 modal';
+  container.style.width = 'fit-content';
   restartButton.className = 'btn btn-danger align-self-center';
   restartButton.addEventListener('click', () => {
     resetGame(container);

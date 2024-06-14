@@ -2,31 +2,35 @@ export const DATA = {
   games: [
     {
       id: 0,
-      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
-      alt: 'Tacho rojo',
-      name: 'juego 1',
-      description: 'un jueguito'
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718407169/juegoThiago_cbk0iu.jpg',
+      alt: 'Un juego alternativo',
+      name: 'Treevia',
+      description: 'Testea tu conocimiento de arboles',
+      link: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718407169/juegoThiago_cbk0iu.jpg'
     },
     {
-      id: 0,
-      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
-      alt: 'Tacho rojo',
-      name: 'juego 2',
-      description: 'un jueguito'
+      id: 1,
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718407169/juegoAgus_mosgec.jpg',
+      alt: 'Un juego alternativo',
+      name: 'Wordle',
+      description: 'Adivina la palabra escondida',
+      link: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718407169/juegoAgus_mosgec.jpg'
     },
     {
-      id: 0,
+      id: 2,
       src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
-      alt: 'Tacho rojo',
+      alt: 'Un juego alternativo',
       name: 'juego 3',
-      description: 'un jueguito'
+      description: 'un jueguito',
+      link: ''
     },
     {
-      id: 0,
+      id: 3,
       src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
-      alt: 'Tacho rojo',
+      alt: 'Un juego alternativo',
       name: 'juego 4',
-      description: 'un jueguito'
+      description: 'un jueguito',
+      link: ''
     }
   ],
   navBins: [

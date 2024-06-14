@@ -13,7 +13,13 @@ export const winModal = () => {
   bins.forEach((bin) => (bin.style.pointerEvents = 'none'));
   DATA.games.forEach((game) => {
     gamesContainer.appendChild(
-      alternativeGameCard(game.name, game.description, game.src, game.alt)
+      alternativeGameCard(
+        game.name,
+        game.description,
+        game.src,
+        game.alt,
+        game.link
+      )
     );
   });
 
