@@ -70,13 +70,7 @@ export const showCards = () => {
   if (window.innerWidth < 768) {
     modal.style.top = '75%';
   }
-  window.addEventListener('resize', () => {
-    if (window.innerWidth < 768) {
-      modal.style.top = '70%';
-    } else {
-      modal.style.top = '50%';
-    }
-  });
+
   const button = document.querySelector('.instructions-button');
   const newButton = button.cloneNode(true);
   button.parentNode.replaceChild(newButton, button);
@@ -107,7 +101,7 @@ export const showBins = () => {
   if (window.innerWidth < 768) {
     finger.className = 'finger-bins mobile';
     finger.src = Finger;
-    modal.style.top = '50%';
+    modal.style.top = '30vh';
   } else {
     finger.className = 'finger-bins full';
     finger.src = Left;
@@ -117,7 +111,6 @@ export const showBins = () => {
   const button = document.querySelector('.instructions-button');
   const newButton = button.cloneNode(true);
   button.parentNode.replaceChild(newButton, button);
-
   newButton.addEventListener('click', () => {
     document.querySelector('header > div').classList.remove('filtered');
     removeBlur();
@@ -125,5 +118,9 @@ export const showBins = () => {
     document.querySelector('.modal-instruction-start').remove();
     document.querySelector('main').style.pointerEvents = 'all';
     document.querySelector('aside').style.pointerEvents = 'all';
+    document.querySelector('footer > p').classList.add('text-white');
+    Array.from(document.querySelectorAll('header p')).forEach((element) =>
+      element.classList.add('text-white')
+    );
   });
 };

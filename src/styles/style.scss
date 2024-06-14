@@ -211,6 +211,11 @@
   }
 }
 
+.card-item.selected {
+  transform: translateY(-10px);
+  border: 4px solid green;
+}
+
 
 .filtered {
   filter: brightness(20%);
@@ -266,9 +271,14 @@
 .finger-bins.mobile {
   position: absolute;
   left: 50%;
-  bottom: 100px;
+  bottom: 300px;
   animation: bounce 1s infinite;
- 
+  @media (max-width: 390px) {
+    bottom: 200px
+  }
+  @media (max-width: 745px) {
+    bottom: 150px
+  }
 }
 
 .modal-instruction-start {
