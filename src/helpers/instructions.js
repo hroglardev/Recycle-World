@@ -10,8 +10,8 @@ export const modalInstruction = () => {
 
   nextButton.className = 'instructions-button btn btn-success';
   textParagraph.className = 'instruction-text ';
-  textParagraph.innerText =
-    "Bienvenido a 'Recycling world'. El objetivo del juego es separar la basura en los cestos correspondientes. Utiliza el rojo para objetos potencialmente tóxicos. El Gris para elementos de papel o carton. El cesto Azul es para desechos metalicos o plasticos, mientras que el verde es para elementos organicos como por ejemplo comidas.";
+  textParagraph.innerText = `Bienvenido a 'Recycling world'. 
+  El objetivo del juego es separar la basura en los cestos correspondientes. Utiliza el Rojo para objetos potencialmente tóxicos. El Gris para elementos de papel o carton. El cesto Azul es para desechos metalicos o plasticos, mientras que el verde es para elementos organicos como por ejemplo comidas.`;
   nextButton.innerText = 'Siguiente';
   container.className =
     'modal-instruction-start d-flex flex-column align-items center gap-2';

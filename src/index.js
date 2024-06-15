@@ -5,32 +5,32 @@ export const DATA = {
       src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718407169/juegoThiago_cbk0iu.jpg',
       alt: 'Un juego alternativo',
       name: 'Treevia',
-      description: 'Testea tu conocimiento de arboles',
-      link: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718407169/juegoThiago_cbk0iu.jpg'
+      description: 'Testea tu conocimiento de arboles.',
+      link: 'https://thiagojuarezsibello.github.io/Treevia/'
     },
     {
       id: 1,
       src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718407169/juegoAgus_mosgec.jpg',
       alt: 'Un juego alternativo',
       name: 'Wordle',
-      description: 'Adivina la palabra escondida',
-      link: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718407169/juegoAgus_mosgec.jpg'
+      description: 'Adivina la palabra escondida.',
+      link: 'https://agustinesposito29.github.io/wordle.sustentabilidad.io/'
     },
     {
       id: 2,
-      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718409151/JuegoMati_myoj37.jpg',
       alt: 'Un juego alternativo',
-      name: 'juego 3',
-      description: 'un jueguito',
-      link: ''
+      name: 'EcoMatch',
+      description: 'Encuentra todas las parejas de tarjetas.',
+      link: 'https://matiasniedermaier.github.io/memoMatch/'
     },
     {
       id: 3,
-      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1717967273/red-bin_p3asrm.svg',
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718410903/JuegoNahue_vrpy9i.jpg',
       alt: 'Un juego alternativo',
-      name: 'juego 4',
-      description: 'un jueguito',
-      link: ''
+      name: 'Piedra Papel Tijeras',
+      description: 'Juega el clásico de piedra papel y tijeras.',
+      link: 'https://nahuelberensztein.github.io/juegoddw/'
     }
   ],
   navBins: [
