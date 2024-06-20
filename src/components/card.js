@@ -8,6 +8,8 @@ export const card = (src, alt, targetBin, itemName) => {
   image.src = src;
   image.alt = alt;
   image.className = 'd-block w-100';
+  image.loading = 'lazy';
+  image.width = 167;
 
   return container;
 };
