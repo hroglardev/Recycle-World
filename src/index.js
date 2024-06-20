@@ -68,7 +68,7 @@ export const DATA = {
       id: 0,
       name: 'Banana',
       targetBin: 'Green',
-      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718846790/magazine_shszak_t91guc.webp',
+      src: 'https://res.cloudinary.com/djwg0bdyh/image/upload/v1718846788/banana_dm3svm_iykduz.webp',
       alt: 'banana'
     },
     {
