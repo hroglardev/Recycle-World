@@ -14,6 +14,8 @@ export const alternativeGameCard = (name, description, src, alt, link) => {
   linkToGame.setAttribute('href', link);
   gameImage.src = src;
   gameImage.alt = alt;
+  gameImage.loading = 'lazy';
+  gameImage.width = 175;
 
   gameName.innerText = name;
   gameDesc.innerText = description;
