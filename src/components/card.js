@@ -10,6 +10,7 @@ export const card = (src, alt, targetBin, itemName) => {
   image.className = 'd-block w-100';
   image.loading = 'lazy';
   image.width = 167;
+  image.height = 167;
 
   return container;
 };
